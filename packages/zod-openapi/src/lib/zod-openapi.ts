@@ -430,6 +430,7 @@ function parseDiscriminatedUnion({
 >): SchemaObject {
   return merge(
     {
+      type: 'object',
       discriminator: {
         propertyName: (
           zodRef as z.ZodDiscriminatedUnion<
